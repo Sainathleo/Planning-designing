@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Solutions</title>
+    <!-- css for complete page -->
+    https://github.com/Sainathleo/Planning-designing.git
+    <style>
+        header{
+            background-color: #b9bdc4;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            position: fixed;
+            top: 0%;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+        .main-section,.client-section,.meeting-section{
+            height: 100vh;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;      
+        }
+        input{
+            height: 20px;
+            /* width: 30px; */
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+        .logo{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 3px solid black; */
+            /* background-color: gray; */
+            border-radius: 10px;
+            font-size: xx-large;
+        }
+        .form1{
+            display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             border: 3px solid gray;
+             border-radius: 5%;
+             width: 350px;
+        }
+        footer{
+            height: 20px;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            bottom: 0%;
+        }
+        /* For all buttons */
+        button{
+            background-color: black;
+            color: white;
+            border-radius: 20%;
+        }
+    </style>
+    <!-- End of css -->
+</head>
+<body>
+    <header>
+        <h2><a href="#client-section">create a client</a></h2>
+        <h2><a href="#meeting-section">create a meeting schedule</a></h2>
+    </header>
+    <section class="main-section">
+        <div class="logo">
+            <div style="border: 2px solid black;border-radius: 100%;background-color: yellow;"><h1>A<sub><img height="10px" width="20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmAUwaLsUX6szwqicaRq37U3pFTl7jt69i557nSUevyA&s" alt=""></sub>S</h1></div>
+            <h3 style="color: yellow;">&nbsp;&nbsp;Anna<sub style="color: red;">S</sub>&nbsp;&nbsp;<span style="color: blue;"> Solutions</span></h3></div>
+    </section>
+    <section class="client-section" id="client-section">
+       
+                <div>
+                    <form action="" class="form1">
+                        <h1>Create a Client</h1>
+                <p>please fill this form to create a client</p>
+                      <label for="name">Name</label>
+                        <input type="text" required><br>
+                        <label for="email" >Email</label>
+                        <input type="text" placeholder="username" required><br>
+                        <label for="number">Number</label>
+                        <input type="number" placeholder="optional"><br>
+                        <h2>Create password</h2>
+                        <input type="password" placeholder="password" required><br>
+                        <input type="password" placeholder="conform password" required><br>
+                        <button>Register</button>
+
+                    </form>
+                </div>
+            
+        
+    </section>
+    <section class="meeting-section" id="meeting-section">
+        <div>
+            <form action="" style="display: flex; flex-direction: column;">
+                <h1>client meeting schedule</h1>
+              <label for="text">Meeting Topic</label>
+                <input type="text" placeholder="Name of the topic" required><br>
+                <label for="number">Number of people</label>
+                <input type="number"><br>
+                <input type="datetime-local">
+                <label for="text">Enter meeting description</label>
+                <textarea name="Descrption" placeholder="Enter descrption here" id="" cols="30" rows="10"></textarea>
+                
+                
+                <button>Register</button>
+
+            </form>
+        </div>
+    
+    </section>
+    <footer>
+            
+    </footer>
+    
+</body>
+</html>
